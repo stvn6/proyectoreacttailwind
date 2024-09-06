@@ -1,10 +1,13 @@
 import './App.css'
 import Footer from "../src/components/Footer/Footer.jsx"
+import Nav from "../src/components/Header/Header.jsx"
 function App() {
 
 
   return (
     <>
+        <Nav />
+        <div className="bg-indigo-600 w-full h-screen"></div>
         <Footer />
     </>
   )
