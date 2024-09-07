@@ -13,12 +13,10 @@ const Nav = () => {
         <div className='shadow-md w-full fixed top-0 left-0'>
             <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
             <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
-                <span className="text-3xl text-indigo-600 mr-1 pt-2">
-                    <ion-icon name="airplane-outline"></ion-icon>
+                <span className="text-3xl text-black-600 mr-1 pt-2">
+                        <ion-icon name="logo-ionitron"></ion-icon>
                 </span>
-                Steven
             </div>
-
                 <div onClick={()=>setOpen(!open)} className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">
                     <ion-icon name={open ? "close-outline":"menu-outline"}></ion-icon>
                 </div>
@@ -26,10 +24,12 @@ const Nav = () => {
                     {
                         Links.map((link) => (
                             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-                                <a href={link} className="text-gray-800 hover:text-gray-400 duration-500">{link.name}</a>
+                                <a href={link}
+                                   className="text-gray-800 hover:text-gray-400 duration-500">{link.name}</a>
                             </li>
                         ))
                     }
+                    <input type="text" placeholder="Buscar Producto" className="bg-gray-100 text-gray-800 sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"/>
                     <Button>
                         SIGN IN
                     </Button>
