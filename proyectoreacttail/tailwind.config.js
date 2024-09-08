@@ -5,7 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'ola-bg': "url('./src/components/Image/olaa.jpg')"      }
+    },
   },
   plugins: [],
 }
