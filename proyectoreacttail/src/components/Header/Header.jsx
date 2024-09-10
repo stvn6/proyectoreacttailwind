@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Button from  "../Button/Button.jsx"
+import SearchB from "../SearchB/SearchB.jsx"
 
 const Nav = () => {
     let Links =[
@@ -29,7 +30,6 @@ const Nav = () => {
                             </li>
                         ))
                     }
-                    <input type="text" placeholder="Buscar Producto" className="bg-gray-500 text-white sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5  px-4 pl-12 shadow rounded focus:outline-none"/>
                     <Button>
                         SIGN IN
                     </Button>
